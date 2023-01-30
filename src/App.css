@@ -39,7 +39,7 @@ html {
 
 /* ::-webkit-scrollbar se utiliza para personalizar la apariencia de la barra de desplazamiento */
 ::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 body {
@@ -70,6 +70,7 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2,
