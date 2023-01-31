@@ -51,7 +51,7 @@ const About = () => {
               <TbCode className="about__icon "/>
               <h5>Frontend</h5>
               <small>
-              <SiJavascript />
+              <SiJavascript title='Java Script'/>
               <DiCss3 />
               <AiFillHtml5 />
               <FaReact />
