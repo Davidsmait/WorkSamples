@@ -5,28 +5,32 @@
 }
 
 .about__me {
+    border: 1px solid transparent;
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        var(--color-primary),
-        transparent
-    );
+    background: var(--color-bg-variant);
     display: grid;
     place-items: center;
-}
-
-.about__me-image {
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(9deg);
     transition: var(--transition);
+    padding-left: 1rem;
 }
 
-.about__me-image:hover {
-    transform: rotate(0deg);
+.about__me:hover {
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.about__me-info {
+    border-radius: 2rem;
+    transition: var(--transition);
+    color: var(--color-light);
+}
+
+.about__me-code{
+    display: inline-block;
+    color: var(--color-primary);
 }
 
 .about__cards {
@@ -94,7 +98,7 @@
 
 @media screen and (max-width: 600px) { 
     .about__me {
-        width: 65%;
+        width: 75%;
         margin: 0 auto -2rem;
     }
 

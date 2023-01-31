@@ -41,7 +41,6 @@ header {
 /* ========== ME IMAGE ============ */
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -51,6 +50,11 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.me img {
+    position: relative;
+    top: -2rem;
 }
 
 /* ========== SCROLL SOWN ============ */
