@@ -3,6 +3,9 @@ import HeaderSocials from './HeaderSocials'
 import CV from './CTA'
 import './header.css'
 import ME from '../../assets/me.jpeg'
+import ME2 from '../../assets/me2.jpeg'
+import ME3 from '../../assets/me3.jpeg'
+import ME4 from '../../assets/me4.jpeg'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
 
@@ -16,7 +19,7 @@ const Header = () => {
         <CV />
         <HeaderSocials />
         <div className='me'>
-          <img src={ME} alt="me" />
+          <img className={""}  src={ME4} alt="me" />
         </div>
         <a href="#portfolio" className='scroll__down'>Scroll down <AiOutlineArrowRight/></a>
       </div>
