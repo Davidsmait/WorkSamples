@@ -35,8 +35,7 @@
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .about__card {
@@ -57,15 +56,16 @@
 .about__icon {
     color: var(--color-primary);
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
 }
 
 .about__card h5 {
     font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .about__card small {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
@@ -73,12 +73,13 @@
 }
 
 
+
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
 
-/* ============= MEDIA QUERIES (MD DEVICES) ========== */
+/* ============= MEDIA QUERIES (MD DEVICES) ========== */ 
 
 @media screen and (max-width: 1024px) {  
    .about__container {
@@ -103,7 +104,7 @@
     }
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     

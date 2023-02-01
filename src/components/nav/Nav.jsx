@@ -21,23 +21,23 @@ const Nav = () => {
         className={activeNav === '#about' ? 'active' : ''}>
         <AiOutlineUser/> </a>
       <a 
+        href="#portfolio"
+        onClick={() => setActiveNav('#portfolio')} 
+        className={activeNav === '#portfolio' ? 'active' : ''}> <MdWorkOutline/> 
+      </a>
+      <a 
         href="#experience"
         onClick={() => setActiveNav('#experience')} 
         className={activeNav === '#experience' ? 'active' : ''}
         > 
         <IoMdBook/> 
       </a>
-      <a 
-        href="#portfolio"
-        onClick={() => setActiveNav('#portfolio')} 
-        className={activeNav === '#portfolio' ? 'active' : ''}> <MdWorkOutline/> 
-      </a>
-      <a 
+      {/* <a 
         href="#contact"
         onClick={() => setActiveNav('#contact')} 
         className={activeNav === '#contact' ? 'active' : ''}>
         <BiMessageSquareDetail/> 
-      </a>
+      </a> */}
     </nav>
   )
 }

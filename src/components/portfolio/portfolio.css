@@ -34,17 +34,26 @@
     margin-bottom: 1rem;
 }
 
+.portfolio_paragraph {
+    color: var(--color-light);
+    margin-bottom: 1.4rem;
+}
+
 /* ============= MEDIA QUERIES (MD DEVICES) ========== */
 
 @media  screen and (max-width: 1024px) {
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
+        
     }
 }
  /* ============= MEDIA QUERIES (SMALL DEVICES) ========== */
  
- @media screen and (max-width: 600px) { 
+ @media screen and (max-width: 600px) {
+    .portfolio {
+        margin-top: 12rem;
+    }
     .portfolio__container {
         grid-template-columns: 1fr;
         gap: 1rem;

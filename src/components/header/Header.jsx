@@ -3,6 +3,8 @@ import HeaderSocials from './HeaderSocials'
 import CV from './CTA'
 import './header.css'
 import ME from '../../assets/me.jpeg'
+import {AiOutlineArrowRight} from 'react-icons/ai'
+
 
 const Header = () => {
   return (
@@ -14,9 +16,9 @@ const Header = () => {
         <CV />
         <HeaderSocials />
         <div className='me'>
-          <img src={""} alt="me" />
+          <img src={ME} alt="me" />
         </div>
-        <a href="#contact" className='scroll__down'>Scroll down</a>
+        <a href="#portfolio" className='scroll__down'>Scroll down <AiOutlineArrowRight/></a>
       </div>
     </header>
   )
