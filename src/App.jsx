@@ -7,21 +7,40 @@ import Experience from './components/experience/Experience'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home></Home>
+    },
+    {
+        path: "/projects",
+        element: <div>Hello world!</div>
+    },
+]);
 
 function App() {
 
   return (
-    <div className="App">
-      <Header />
-      <Nav />
-        <Experience />
-      <Portfolio />
-        <About />
-      {/* <Contact /> */}
-      <Footer />
-    </div>
+      <RouterProvider router={router} />
   )
 }
 
 export default App
+
+
+function Home() {
+    return (
+        <div className="App">
+            <Header />
+            <Nav />
+            <Experience />
+            <Portfolio />
+            <About />
+            {/* <Contact /> */}
+            <Footer />
+        </div>
+    )
+}
