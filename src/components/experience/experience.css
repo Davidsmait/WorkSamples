@@ -33,10 +33,12 @@
 .experience__details {
     display: flex;
     gap: 1rem;
+    margin-right: 5px;
 }
 .experience__details-icon {
-    margin-top: 6px;
+    font-size: 1.2rem;
     color: var(--color-primary);
+    flex-shrink: 0;
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ========== */
