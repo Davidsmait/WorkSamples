@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     padding-top: 3rem;
-    overflow: hidden; /* Serán ocultados si sobrepasan los límites del elemento contenedor. */
+    overflow: hidden;
 }
 
 .header__container {
@@ -25,7 +25,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .08rem;
+    gap: 0.8rem;
     position: absolute;
     left: 0;
     bottom: 3rem;
@@ -42,19 +42,19 @@ header {
 
 .me {
     width: 22rem;
-    height: 30rem;
+    height: 20rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .me img {
     position: relative;
-    top: 3rem;
+    top: .5rem;
     left: 2rem;
     width: 100%;
     height: 100%;
@@ -72,15 +72,14 @@ header {
     gap: 1rem;
     position: absolute;
     left: 50%;
-    top: 95%;
-    margin-top: 20px;
+    top: calc(80%); /* Position the icons just below the image */
     transform: translateX(-50%);
     z-index: 1;
 }
 
 .social-icons img {
-    width: 100%;
-    height: 40px;
+    width: 54px;
+    height: 54px;
 }
 
 /* ========== SCROLL DOWN ============ */
@@ -101,12 +100,27 @@ header {
         height: 98vh;
     }
 
-    .social-icons{
-        top: calc(50% + 48%);
-        gap: .9rem;
+    .me {
+        width: 22rem;
+        height: 20rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 4rem;
+        border-radius: 12rem 12rem 0 0;
+        overflow: hidden;
+        padding: 1.5rem;
     }
+
+    .social-icons {
+        width: 98%;
+        top: calc(80%); /* Adjust positioning for medium screens */
+        gap: 0.9rem;
+    }
+
     .social-icons img {
-        height: 2.3rem;
+        width: 44px;
+        height: 44px;
     }
 }
 
@@ -115,17 +129,28 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
-        margin-bottom: 200px;
     }
+
+
 
     .header__socials,
     .scroll__down {
         display: none;
     }
 
+    .me {
+        height: 18rem;
+        margin-top: 3rem;
+        padding: 1.8rem;
+    }
+
+    .me img {
+        top: .1rem;
+    }
+
     .social-icons {
         width: 98%;
-        top: calc(50% + 56%);
+        top: 80vh;
         gap: 1rem;
     }
 
@@ -133,7 +158,4 @@ header {
         height: 2.3rem;
         max-width: 2.3rem;
     }
-
-
-
 }
