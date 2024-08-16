@@ -52,6 +52,12 @@ const Experience = () => {
                         <article className='experience__details'>
                             <HiBadgeCheck className='experience__details-icon'/>
                             <div>
+                                <h4>Next.js</h4>
+                            </div>
+                        </article>
+                        <article className='experience__details'>
+                            <HiBadgeCheck className='experience__details-icon'/>
+                            <div>
                                 <h4>Node.js</h4>
                             </div>
                         </article>

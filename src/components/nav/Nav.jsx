@@ -23,15 +23,15 @@ const Nav = () => {
               <IoMdBook/>
           </a>
           <a
-              href="#about"
-              onClick={() => setActiveNav('#about')}
-              className={activeNav === '#about' ? 'active' : ''}>
-              <AiOutlineUser/> </a>
-          <a
               href="#portfolio"
               onClick={() => setActiveNav('#portfolio')}
               className={activeNav === '#portfolio' ? 'active' : ''}> <MdWorkOutline/>
           </a>
+          <a
+              href="#about"
+              onClick={() => setActiveNav('#about')}
+              className={activeNav === '#about' ? 'active' : ''}>
+              <AiOutlineUser/> </a>
 
           {/* <a
         href="#contact"
