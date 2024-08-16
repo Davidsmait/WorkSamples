@@ -115,6 +115,7 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+        margin-bottom: 200px;
     }
 
     .header__socials,
@@ -124,13 +125,13 @@ header {
 
     .social-icons {
         width: 98%;
-        top: calc(50% + 46%);
+        top: calc(50% + 56%);
         gap: 1rem;
     }
 
     .social-icons img {
         height: 2.3rem;
-        height: 2.3rem;
+        max-width: 120px;
     }
 
 
