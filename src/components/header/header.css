@@ -98,11 +98,11 @@ header {
 
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 98vh;
     }
 
     .social-icons{
-        top: calc(50% + 25%);
+        top: calc(50% + 48%);
         gap: .9rem;
     }
     .social-icons img {
@@ -131,8 +131,9 @@ header {
 
     .social-icons img {
         height: 2.3rem;
-        max-width: 120px;
+        max-width: 2.3rem;
     }
+
 
 
 }
