@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     padding-top: 3rem;
-    overflow: hidden; /*serán ocultados si sobrepasan los límites del elemento contenedor.*/
+    overflow: hidden; /* Serán ocultados si sobrepasan los límites del elemento contenedor. */
 }
 
 .header__container {
@@ -63,7 +63,21 @@ header {
     transform: scale(1.4);
 }
 
-/* ========== SCROLL SOWN ============ */
+/* ========== SOCIAL ICONS ============ */
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(50% + 20rem); /* Ajusta según el tamaño de la imagen y el espaciado deseado */
+    z-index: 1;
+}
+
+/* ========== SCROLL DOWN ============ */
 
 .scroll__down {
     position: absolute;
@@ -81,11 +95,19 @@ header {
         height: 68vh;
     }
 
+    .social-icons{
+        top: calc(50% + 45%);
+        gap: .9rem;
+    }
+    .social-icons img {
+        height: 2.3rem;
+    }
 }
+
 /* ============= MEDIA QUERIES (SMALL DEVICES) ========== */
 
 @media screen and (max-width: 600px) {
-    header{
+    header {
         height: 90vh;
     }
 
@@ -93,4 +115,16 @@ header {
     .scroll__down {
         display: none;
     }
+
+    .social-icons {
+        width: 100%;
+        top: calc(50% + 35%);
+        gap: 1rem;
+    }
+
+    .social-icons img {
+        height: 2.3rem;
+    }
+
+
 }
